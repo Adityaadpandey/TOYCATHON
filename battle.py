@@ -86,7 +86,7 @@ class Fighter():
         self.update_time = pygame.time.get_ticks()
         # load idle images
         temp_list = []
-        for i in range(8):
+        for i in range(6):
             img = pygame.image.load(f'img/{self.name}/Idle/{i}.png')
             img = pygame.transform.scale(img, (img.get_width() * 3, img.get_height() * 3))
             temp_list.append(img)
@@ -216,7 +216,7 @@ class DamageText(pygame.sprite.Sprite):
 
 damage_text_group = pygame.sprite.Group()
 
-Durga = Fighter(200, 260, 'Durga', 20, 10, 3)
+Durga = Fighter(200, 260, 'Durga', 40, 10, 3)
 Devil1 = Fighter(550, 270, 'Devil', 20, 6, 1)
 Devil2 = Fighter(700, 270, 'Devil', 20, 6, 1)
 
